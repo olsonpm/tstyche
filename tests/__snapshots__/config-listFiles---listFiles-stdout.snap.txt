@@ -1,4 +1,0 @@
-[
-  "<<cwd>>/tests/__fixtures__/.generated/config-listFiles/__typetests__/isNumber.tst.ts",
-  "<<cwd>>/tests/__fixtures__/.generated/config-listFiles/__typetests__/isString.tst.ts"
-]
