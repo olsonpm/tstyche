@@ -1,4 +1,5 @@
 import type ts from "typescript";
+import tsval from "typescript";
 import type { Assertion } from "#collect";
 import { DiagnosticOrigin } from "#diagnostic";
 import type { ArgumentNode, Relation, TypeChecker } from "./types.js";
@@ -82,7 +83,7 @@ export class MatchWorker {
   getTypeText(node: ArgumentNode): string {
     const type = this.getType(node);
 
-    return this.#typeChecker.typeToString(type);
+    return this.#typeChecker.typeToString(type, undefined, tsval.TypeFormatFlags.NoTruncation);
   }
 
   getType(node: ArgumentNode): ts.Type {
